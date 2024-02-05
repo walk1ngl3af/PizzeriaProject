@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <h1>Pizzeria</h1>
+        <form>
+            <fieldset>
+                <legend>Customer: </legend>
+                <div class="row">
+                    <div>
+                        <label for="firstname">First</label>
+                        <input id="firstname" name="first_name" type="text">
+                    </div>
+                    <div>
+                        <label for="lastname">Last</label>
+                        <input id="lastname" name="last_name" type="text">
+                    </div>
+                </div>
+            </fieldset>
+            <div class="row">
+                <fieldset>
+                    <legend>Crust:</legend>
+                    <div>
+                        <input type="radio" id="vanilla" name="icecream">
+                        <label for="vanilla">Thin</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="strawberry" name="icecream">
+                        <label for="strawberry">Pie-Rise</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="chocolate" name="icecream">
+                        <label for="chocolate">Cauliflower</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="row">
+                <fieldset>
+                    <legend>Size:</legend>
+                    <div>
+                        <input type="radio" id="small" name="size">
+                        <label for="small">Small</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="medium" name="size">
+                        <label for="medium">Medium</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="large" name="size">
+                        <label for="large">Large</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="row">
+                <fieldset>
+                    <legend>Toppings:</legend>
+                    <div>
+                        <input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
+                        <label for="pepperoni">Pepperoni</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="sausage" name="sausage" value="sausage">
+                        <label for="sausage">Sausage</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="ham" name="ham" value="ham">
+                        <label for="ham">Ham</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="row">
+                <fieldset>
+                    <legend>Payment Type:</legend>
+                    <label for="container">Please Choose One</label>
+                    <select name="container" id="container">
+                        <option value="cup">Quarters</option>
+                        <option value="sugar">Dimes</option>
+                        <option value="waffle">Nickels</option>
+                        <option value="dippedWaffle">Pennies</option>
+                    </select>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Special:</legend>
+                    <label for="SpecialRequests">Special Requests: </label>
+                    <textarea id="SpecialRequests" name="SpecialRequests" rows="4" cols="10" placeholder="Vegetarian, Gluten Free, etc."></textarea>
+                </fieldset>
+            </div>
+            <div class="row">
+                <button type="button" onclick="alert(`50% off today only for ¢30,000 - Notice : We do not break anything higher than ¢25`) ">Calculate Cost</button>
+                <button type="submit" onclick="alert(`Order Submitted`)">Submit Order</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
